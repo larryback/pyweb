@@ -1,0 +1,25 @@
+{% extends "l2.html" %}
+{% block title %} {{title}} {% endblock %}
+
+{% block section %}
+<div>
+    {{ super() }}
+    aaaaaaaaaaaa
+    <div>
+        <ul>
+            {% for user in userlist %}
+                <li>{{user.id}}.{{user.email}} ({{user.nickname}})</li>
+            {% else %}
+                <li>There is no users.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block outer_block %}
+    <p>1111111111</p>
+    {{ super() }}
+    {% block inner_block %} BBBBBB {% endblock inner_block %}
+{% endblock outer_block %}
+

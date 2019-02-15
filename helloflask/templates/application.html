@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Boeing C-17 Globemaster III</title>
+  <title>Melon Top 100</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="static/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,9 +26,8 @@
       <div class="container">
 
         <!-- Brand -->
-        <i class="fas fa-plane"></i>
-        <a class="navbar-brand waves-effect" href="https://www.wikiwand.com/en/Boeing" target="_blank">
-          <strong class="blue-text">Boeing</strong>
+        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+          <strong class="blue-text">Top100</strong>
         </a>
 
         <!-- Collapse -->
@@ -47,49 +46,41 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://www.boeing.com/defense/c-17-globemaster-iii/" target="_blank">About C-17 Globemaster III</a>
+            <!-- <li class="nav-item">
+              <a class="nav-link waves-effect" href="#magazine">About MDB</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://www.boeing.com/defense/c-17-globemaster-iii/#/technical-specifications"
-                target="_blank">Technical Specifications</a>
+              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
+                target="_blank">Free download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://www.boeing.com/defense/c-17-globemaster-iii/#/gallery" target="_blank">C-17 Globemaster III Gallery</a>
-            </li>
+              <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free
+                tutorials</a>
+            </li> -->
           </ul>
 
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-                <i class="fab fa-facebook-f"></i>
+              <a href="#" id="btnSingin" class="nav-link waves-effect" data-toggle="modal" data-target="#basicExampleModal">
+                <i class="fas fa-sign-in-alt"></i> Sign-In
               </a>
             </li>
+
             <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fas fa-user"></i> 홍길동
+              </a>
+            </li>
+            <!-- <li class="nav-item">
               <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
-            </li>
-          <!-- Material form register -->
-          <form>
-            <p class="h4 text-center mb-4">Sign up</p>
-            <div class="grey-text">
-              <mdb-input label="Your name" icon="user" type="text"/>
-              <mdb-input label="Your email" icon="envelope" type="email"/>
-              <mdb-input label="Confirm your email" icon="exclamation-triangle" type="text"/>
-              <mdb-input label="Your password" icon="lock" type="password"/>
-            </div>
-            <div class="text-center">
-              <mdb-btn color="primary">Register</mdb-btn>
-            </div>
-          </form>
-          <!-- Material form register --> 
-            
-            <!-- <li class="nav-item">
-              <a href="https://github.com/larryback/pyweb.git" class="nav-link border border-light rounded waves-effect"
+            </li> -->
+            <li class="nav-item">
+              <a href="https://github.com/indiflex/pyweb" class="nav-link border border-light rounded waves-effect"
                 target="_blank">
-                <i class="fab fa-github mr-2"></i>My GitHub -->
+                <i class="fab fa-github mr-2"></i>MDB GitHub
               </a>
             </li>
           </ul>
@@ -107,41 +98,23 @@
   <main class="mt-5 pt-5">
     <div class="container">
 
-      <!--Section: Jumbotron-->
-      <section class="card wow fadeIn" style="background-image: url();">
-
+      <!-- <hr class="my-5"> -->
       
-          
-            <div style = "text-align:center">
-              <h1><strong > C-17 GlobeMaster III</strong></h1>
-             
-             <img width="1000" height="500" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/US_Air_Force_Boeing_C-17A_Globemaster_III_-_08-8198_-_ZRH_%2824097731183%29.jpg" frameborder="0"  >
-            </div>
-          
-            
-
-   
-      
-      <!--Section: Jumbotron-->
-
-      <hr class="my-5">
-
       <!--Section: Magazine v.1-->
-      <section class="wow fadeIn">
+      <section id="magazine" class="wow fadeIn">
 
         <!--Section heading-->
-        <h2 class="h1 text-center my-5 font-weight-bold">Magazine NewsFeed</h2>
+        <h2 class="h1 text-center my-5 font-weight-bold">Melon Top 100</h2>
 
         <!--Grid row-->
         <div class="row text-left">
 
           <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-6">
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/5jRVBCo9MPc?controls=1&amp;rel=1&amp;autohide=1&amp;version=3"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/5jRVBCo9MPc?controls=1&amp;rel=1&amp;autohide=1&amp;version=3" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="315"></object>
-              
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
               <a>
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -151,23 +124,23 @@
             <div class="news-data">
               <a href="" class="light-blue-text">
                 <h6>
-                  <i class="fas fa-plane"></i>
-                  <strong>C-17 Globemaster III</strong>
+                  <i class="fas fa-music"></i>
+                  <strong> Songs</strong>
                 </h6>
               </a>
               <p>
                 <strong>
-                  <i class="far fa-clock"></i> 2016/10/02</strong>
+                  <i class="far fa-clock"></i> 2019-02-08</strong>
               </p>
             </div>
             <h3>
               <a>
-                <strong>Navy families evacuate Cuba ahead of Hurricane Matthew</strong>
+                <strong>Today's Top 100</strong>
               </a>
             </h3>
-            <p> 161002-Z-RC774-085 NAVAL STATION GUANTANAMO BAY, Cuba (Oct. 2, 2016) Families settle into their seats aboard
-              a Boeing C-17A Globemaster III aircraft for evacuation from Naval Station Guantanamo Bay (NSGB) ahead of Hurricane Matthew.
-            </p>
+            <!-- <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+            </p> -->
 
             <!--/Featured news-->
 
@@ -175,28 +148,41 @@
 
             <!--Small news-->
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-2"><h1 class="text-primary">100</h1></div>
+              <div class="col-md-2">
 
                 <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" class="img-fluid" alt="Minor sample post image">
+                <div class="view overlay rounded z-depth-1x text-center">
                   <a>
+                  <img src="{{url_for('static', filename='img/test.jpg') }}" class="img-fluid w-100" alt="Minor sample post image">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
               </div>
 
               <!--Excerpt-->
-              <div class="col-md-9">
+              <div class="col-md-8">
                 <p class="dark-grey-text">
-                  <strong>2016/10/03</strong>
+                  <strong>넘쳐흘러</strong> - 엠시더맥스
                 </p>
-                <a>Hurricane Prompts Evacuation of 700 Family Members From Guantanamo Bay
-                  <i class="fas fa-angle-right float-right"></i>
+                <a><small class="text-muted"><i class="fas fa-compact-disc"></i> Circular</small>
+                  <i class="fas fa-angle-left float-right"></i>
                 </a>
               </div>
 
             </div>
+
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><i class="far fa-thumbs-up text-muted"></i> <strong class="float-right">홍길동</strong></li>
+                  <li class="list-group-item"><small class="text-muted">작사</small> <strong class="float-right">홍길동</strong></li>
+                  <li class="list-group-item"><small class="text-muted">작사</small> <strong class="float-right">홍길동</strong></li>
+                </ul>
+              </div>
+            </div>
+
             <!--/Small news-->
 
             <hr>
@@ -217,9 +203,9 @@
               <!--Excerpt-->
               <div class="col-md-9">
                 <p class="dark-grey-text">
-                  <strong>2017/09/21</strong>
+                  <strong>18/08/2018</strong>
                 </p>
-                <a>More than 2,000 soldiers head from Fort Bragg to Afghanistan
+                <a>Soluta nobis est eligendi
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
               </div>
@@ -245,9 +231,9 @@
               <!--Excerpt-->
               <div class="col-md-9">
                 <p class="dark-grey-text">
-                  <strong>2016/03/30</strong>
+                  <strong>17/08/2018</strong>
                 </p>
-                <a>Families of U.S. personnel ordered to leave parts of Turkey amid security concerns
+                <a>Voluptatem accusantium doloremque
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
               </div>
@@ -259,13 +245,11 @@
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-6">
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              
-              <object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/a5gxdzgAl5w?controls=1&amp;rel=1&amp;autohide=1&amp;version=3"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/a5gxdzgAl5w?controls=1&amp;rel=1&amp;autohide=1&amp;version=3" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="315"></object>
-          
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/32.jpg" class="img-fluid" alt="Sample post image">
               <a>
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -276,21 +260,21 @@
               <a href="" class="light-blue-text">
                 <h6>
                   <i class="fas fa-plane"></i>
-                  <strong>C-17 Globemaster III</strong>
+                  <strong> Travels</strong>
                 </h6>
               </a>
               <p>
                 <strong>
-                  <i class="far fa-clock"></i> 2018/08/20</strong>
+                  <i class="far fa-clock"></i> 20/08/2018</strong>
               </p>
             </div>
             <h3>
               <a>
-                <strong>Low-flying plane sparks concern in downtown Nashville</strong>
+                <strong>This is title of the news</strong>
               </a>
             </h3>
-            <p> NASHVILLE, Tenn. (WTVF) — A large, low-flying plane sparked concern for many downtown workers in Nashville. 
-              Turns out, it was part of a training exercise for Saturday's inauguration.
+            <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
             </p>
 
             <!--/Featured news-->
@@ -313,9 +297,9 @@
               <!--Excerpt-->
               <div class="col-md-9">
                 <p class="dark-grey-text">
-                  <strong>2018/10/31</strong>
+                  <strong>19/08/2018</strong>
                 </p>
-                <a>Air Force Fires 3 Commanders At Texas Base Amid Reports of 'Dangerous Behavior'
+                <a>Lorem ipsum dolor sit amet
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
               </div>
@@ -341,9 +325,9 @@
               <!--Excerpt-->
               <div class="col-md-9">
                 <p class="dark-grey-text">
-                  <strong>2018/07/20</strong>
+                  <strong>18/08/2018</strong>
                 </p>
-                <a>C-174 Globemaster III aircraft fly over southeast Queensland
+                <a>Soluta nobis est eligendi
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
               </div>
@@ -369,9 +353,9 @@
               <!--Excerpt-->
               <div class="col-md-9">
                 <p class="dark-grey-text">
-                  <strong>2015/08/12</strong>
+                  <strong>17/08/2018</strong>
                 </p>
-                <a>U.S. Consulate Warns of Terror Threats Against American Hotels in Turkey
+                <a>Voluptatem accusantium doloremque
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
               </div>
@@ -457,9 +441,62 @@
   </footer>
   <!--/.Footer-->
 
+  <!-- Modal -->
+  <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel"><strong><i class="fas fa-sign-in-alt"></i> Sign In</strong></h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Default form login -->
+          <form class="text-center border border-light p-5">
+          
+            <p class="h4 mb-4"><strong>Sign In</strong></p>
+          
+            <!-- Email -->
+            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+          
+            <!-- Password -->
+            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+          
+            <div class="d-flex justify-content-around">
+              <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                  <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                </div>
+              </div>
+              <div>
+                <!-- Forgot password -->
+                <a href="">Forgot password?</a>
+              </div>
+            </div>
+          
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+          
+            <!-- Register -->
+            <p>Not a member?
+              <a href="">Register</a>
+            </p>
+          </form>
+          <!-- Default form login -->
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
+      </div>
+    </div>
+  </div>
+
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -470,7 +507,8 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-
+    // $(document).ready
+    $('#basicExampleModal').modal('show');
   </script>
 </body>
 

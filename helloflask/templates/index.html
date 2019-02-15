@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jinja Test Page</title>
+</head>
+<body>
+    <h1>Jinja Test : {{title}}</h1>
+    
+    {{" abc {ef} ghi" }} <br>
+    {{ '}}>> <strong>Strong</strong>' | escape }} <br>
+    {{ "}}>> <strong>Strong</strong>"}} <br>
+    {{ "<strong>Strong</strong>" | safe}} <br>
+    {{ "<strong>Strong</strong>" | striptags}} <br>
+
+
+<hr>
+
+    {% for title, name, isShow in lst %}
+    <li class="{{loop.cycle('aaa', 'bbb', '')}}">{{title}}-{{name}}</li>
+    {% else %}
+    <li>There is no data.</li>
+    {% endfor %}
+
+<hr>    
+    <ul> 
+        {% for rank, title, name, hide, tt in lst if not hide %}
+            <li class="{{loop.cycle('aaa', 'bbb')}}">{{title}}: {{name}}</li>
+        {% endfor %}
+    </ul>
+
+    
+
+    <pre>
+        {% raw %}
+            {% if True  %}
+                    TTT
+            {% endif %}
+        {% endraw %}
+    </pre>
+    <pre>한글 tttttttt
+    {%- if Ture -%} 
+    TTTTT
+    {%- endif -%}qqqqqqqq   
+    </pre>
+
+</body>
+</html>
